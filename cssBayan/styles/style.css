@@ -1,0 +1,62 @@
+fieldset {
+    margin: 0 auto;
+    border: none;
+    width: 50%;
+}
+
+fieldset:hover .item__arrow {
+    background: url('../assets/arrow.svg') center/cover no-repeat;
+}
+
+.item__arrow {
+    width: 15px;
+    height: 14px;
+}
+
+.item__img {
+    display: none;
+}
+
+.item:hover .item__arrow {
+  transform: rotate(90deg);
+}
+
+.item:hover .item__img {
+    display: flex;
+}
+
+input:checked~label {
+    color: red;
+}
+
+input:checked~label .item__arrow {
+    transform: rotate(90deg);
+}
+
+input:checked~label {
+    display: flex;
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+label:last-child {
+    justify-content: center;
+}
+
+/*label::after {*/
+/*    content: "";*/
+/*    background-image: url("../assets/arrow.svg");*/
+/*}*/
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.item {
+    border-top: 1px solid gray;
+}
