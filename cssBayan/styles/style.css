@@ -6,23 +6,18 @@ fieldset {
     padding: 0;
 }
 
-fieldset:hover .item__arrow {
+fieldset:hover span:last-child {
     background: url('../assets/arrow.svg') center/cover no-repeat;
     opacity: 1;
 }
 
-/*label::after {*/
-/*    content: "";*/
-/*    background: url("../assets/arrow.svg");*/
-/*}*/
-
-.item__arrow {
-    width: 20px;
-    height: 20px;
+span:last-child {
+    width: 1rem;
+    height: 1rem;
     opacity: 0;
 }
 
-.item:hover .item__arrow {
+.item:hover span:last-child {
   transform: rotate(90deg);
 }
 
@@ -35,7 +30,7 @@ input:checked~label {
     color: red;
 }
 
-input:checked~label .item__arrow {
+input:checked~label span:last-child {
     transform: rotate(90deg);
 }
 
@@ -45,7 +40,7 @@ input:checked~label img {
 }
 
 input+label {
-    padding: 0 5px 5px;
+    padding: 0 0.5rem 0.5rem;
 }
 
 label {
@@ -68,6 +63,6 @@ img {
 }
 
 .item {
-    border-top: 1px solid gray;
-    padding: 10px 0;
+    background: linear-gradient(0deg, rgba(0,0,0,0.499124649859944) 0%, rgba(255,211,150,1) 100%);
+    padding: 0.5rem 0;
 }
