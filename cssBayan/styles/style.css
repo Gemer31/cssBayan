@@ -1,0 +1,68 @@
+fieldset {
+    margin: 0 auto;
+    border: none;
+    width: 50%;
+    background: #ffd396;
+    padding: 0;
+}
+
+fieldset:hover span:last-child {
+    background: url('../assets/arrow.svg') center/cover no-repeat;
+    opacity: 1;
+}
+
+span:last-child {
+    width: 1rem;
+    height: 1rem;
+    opacity: 0;
+}
+
+.item:hover span:last-child {
+  transform: rotate(90deg);
+}
+
+.item:hover .item__img img {
+    width: 50%;
+    height: 50%;
+}
+
+input:checked~label {
+    color: red;
+}
+
+input:checked~label span:last-child {
+    transform: rotate(90deg);
+}
+
+input:checked~label img {
+    width: 50%;
+    height: 50%;
+}
+
+input+label {
+    padding: 0 0.5rem 0.5rem;
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.item:active {
+    background: #f4c788;
+}
+
+label:last-child {
+    justify-content: center;
+}
+
+img {
+    width: 0;
+    height: 0;
+}
+
+.item {
+    background: linear-gradient(0deg, rgba(0,0,0,0.499124649859944) 0%, rgba(255,211,150,1) 100%);
+    padding: 0.5rem 0;
+}
